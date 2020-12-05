@@ -217,7 +217,7 @@ nav .menu li a:hover{
     -webkit-line-clamp: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #000000;
+    color: white;
     margin: 20px;
 }
 .movies-box:hover{
