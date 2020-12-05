@@ -12,13 +12,15 @@
 		<link rel="shortcut icon" href="images/fav icon.png">
         <!--js-link---------->
         <script src="js/JQuery3.3.1.js"></script>
-        <script src="js/lightslider.js"></script>
+		<script src="js/lightslider.js"></script>
+		<script src="js/loading.js"></script>
         <!--using FontAwesome--------------->
 <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
         
     </head>
 
     <body>
+		
             <nav>
                 <!--logo--------------->
                 <a href="#" class="logo">
@@ -41,75 +43,7 @@
                 <div class="search">
                     <input type="text" placeholder="Find Your Favourtie Movies"/>
                     <!--search-icon----------->
-					<i class="fas fa-search"></i>
-					
-					<div class="options-container">
-						<!-- Exampl
-			   
-						  
-			  
-						  <div class="option" >
-						  <input type="radio" class="radio" id="film" name="category" />
-						  <div class="texts"></div>
-						  <img class="images" src="img/guns-akimbo.jpg" alt="">
-						  <label class="part" for="nestor"><b > ➥Click Here To Watch!==>[ </b><a href="Movies//video.html">HERE!!!</a><b> ]<==</b></label>
-						  </div>
-						  
-						</div>
-			  
-						-->
-						
-						<!--Guns Akimbo (2019)-->
-						
-						
-						<div class="option" >
-						  <input type="radio" class="radio" id="film" name="category" />
-						  <!--title---------------------------------------------------------------------------------------------------------->
-						  <div class="texts">Guns Akimbo (2019)</div>
-						  <!--image---------------------------------------------------------------------------------------------------------->
-						  <img class="images" src="img/guns-akimbo.jpg" alt="">
-						  <label class="part" for="nestor"><b > ➥Click Here To Watch!==>[ </b><a href="Movies/Guns Akimbo 2019.html/video.html">HERE!!!</a><b> ]<==</b></label>
-						</div>
-			  
-						<!--Gretel & Hansel (2020)-->
-			  
-						<div class="option" >
-						  <input type="radio" class="radio" id="film" name="category" />
-						  <!--title---------------------------------------------------------------------------------------------------------->
-						  <div class="texts">Gretel & Hansel (2020)</div>
-						  <!--image---------------------------------------------------------------------------------------------------------->
-						  <img class="images" src="img/gretel-&-hansel.jpg" alt="">
-						  <label class="part" for="nestor"><b > ➥Click Here To Watch!==>[ </b><a href="Movies/Gretel & Hansel 2020/video.html">HERE!!!</a><b> ]<==</b></label>
-						  </div>
-			  
-						 <!--Greenland (2020)--> 
-			  
-						<div class="option" >
-						  <input type="radio" class="radio" id="film" name="category" />
-						  <!--title---------------------------------------------------------------------------------------------------------->
-						  <div class="texts">Greenland (2020)</div>
-						  <!--image---------------------------------------------------------------------------------------------------------->
-						  <img class="images" src="img/greenland.jpg" alt="">
-						  <label class="part" for="nestor"><b > ➥Click Here To Watch!==>[ </b><a href="Movies/Greenland 2020/video.html">HERE!!!</a><b> ]<==</b></label>
-						  </div>  
-			  
-						<!--Dune Drifter (2020)-->
-			  
-						<div class="option" >
-						  <input type="radio" class="radio" id="film" name="category" />
-						  <!--title---------------------------------------------------------------------------------------------------------->
-						  <div class="texts">Dune Drifter (2020)</div>
-						  <!--image---------------------------------------------------------------------------------------------------------->
-						  <img class="images" src="img/dune-drifter.jpg" alt="">
-						  <label class="part" for="nestor"><b > ➥Click Here To Watch!==>[ </b><a href="Movies/Dune Drifter 2020.html/video.html">HERE!!!</a><b> ]<==</b></label>
-						</div>
-			  
-			  
-			  
-						
-			  
-						
-					  </div>
+                    <i class="fas fa-search"></i>
                 </div>
 		  </nav>
 		  <section id="main">
@@ -339,6 +273,8 @@
 				</div>
 			</div>
 		</li>
+
+
 		<li class="item-a">
 			<div class="latest-box">
 				<!--img-------->
@@ -570,6 +506,16 @@
             } 
         });  
       });
-    </script>
+	</script>
+	<div id="overlay">
+		<div class="spinner"></div> 
+		</div>
+	<script>
+		var overlay = document.getElementById("overlay");
+
+window.addEventListener('load', function(){
+  overlay.style.display = 'none';
+})
+	</script>
     </body>
 </html>
